@@ -1,0 +1,21 @@
+{
+  "namespace": "App",
+  "components": [
+    [
+      "STENCIL-GREETER",
+      "s4nwzwqv",
+      {
+        "$": "s9xcxyt6"
+      },
+      [
+        [
+          "greeting",
+          1
+        ]
+      ]
+    ]
+  ],
+  "loader": "app.js",
+  "core": "app/app.odwsqsyn.js",
+  "corePolyfilled": "app/app.cnhcon7t.pf.js"
+}

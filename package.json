@@ -1,0 +1,19 @@
+{
+  "name": "ng-components-integration",
+  "version": "1.0.0",
+  "description": "Angular application that integrates components built using various other tools/libraries/frameworks",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [
+    "angular",
+    "stenciljs",
+    "sveltejs"
+  ],
+  "author": "Omkar Patil <ospatil@gmail.com> (https://github.com/ospatil)",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {}
+}
