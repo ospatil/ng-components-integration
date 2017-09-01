@@ -14,7 +14,8 @@ System.config({
     emitDecoratorMetadata: true
   },
   paths: {
-    'npm:': 'https://unpkg.com/'
+    'npm:': 'https://unpkg.com/',
+    'github:': 'https://cdn.jsdelivr.net/gh/'
   },
   //map tells the System loader where to look for things
   map: {
@@ -41,7 +42,9 @@ System.config({
     '@angular/router/testing': 'npm:@angular/router' + angularVersion + '/bundles/router-testing.umd.js',
     'tslib': 'npm:tslib@1.6.1',
     'rxjs': 'npm:rxjs',
-    'typescript': 'npm:typescript@2.2.1/lib/typescript.js'
+    'typescript': 'npm:typescript@2.2.1/lib/typescript.js',
+
+    'sveltegreeter': 'github:ospatil/svelte-greeter@0.7.0/dist/bundle.js'
 
   },
   //packages defines our app package

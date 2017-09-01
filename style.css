@@ -1,5 +1,6 @@
 /* Styles go here */
 body {
   padding: 10px;
-  color: rgba(0,0,0,.7)
+  color: rgba(0,0,0,.7);
+  line-height: 1.5;
 }
