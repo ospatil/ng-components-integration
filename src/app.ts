@@ -33,7 +33,7 @@ import {default as SvelteGreeter} from 'sveltegreeter'
           <component-wrapper>
             <h2>SvelteJS</h2>
             <p>Source: <a href="https://github.com/ospatil/svelte-greeter">https://github.com/ospatil/svelte-greeter</a></p>
-            <svelte-comp-greeter [greeting]="'Hello'"></svelte-comp-greeter>
+            <svelte-greeter greeting="Hello"></svelte-greeter>
           </component-wrapper>
         </div>
 
@@ -41,8 +41,7 @@ import {default as SvelteGreeter} from 'sveltegreeter'
     </section>
   `,
   directives: [
-    ComponentWrapper,
-    SvelteCompGreeter
+    ComponentWrapper
   ]
 })
 export class App {
@@ -84,29 +83,12 @@ export class ComponentWrapper {
   <section class="svelte-greeter-host"></section>
   `,
 })
-export class SvelteCompGreeter implements OnInit, OnDestroy {
-  @Input() greeting;
-  private component;
-  ngOnInit() {
-    this.component = new SvelteGreeter({
-      target: document.querySelector('.svelte-greeter-host'),
-      data: {
-        greeting: 'Hello'
-      }
-    });
-  }
-
-  ngOnDestroy() {
-    this.component.destroy();
-  }
-}
 
 @NgModule({
   imports: [ BrowserModule ],
   declarations: [
     App,
-    ComponentWrapper,
-    SvelteCompGreeter
+    ComponentWrapper
   ],
   bootstrap: [ App ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
