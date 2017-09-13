@@ -42,10 +42,7 @@ System.config({
     '@angular/router/testing': 'npm:@angular/router' + angularVersion + '/bundles/router-testing.umd.js',
     'tslib': 'npm:tslib@1.6.1',
     'rxjs': 'npm:rxjs',
-    'typescript': 'npm:typescript@2.2.1/lib/typescript.js',
-
-    'sveltegreeter': 'github:ospatil/svelte-greeter@0.7.0/dist/bundle.js'
-
+    'typescript': 'npm:typescript@2.2.1/lib/typescript.js'
   },
   //packages defines our app package
   packages: {

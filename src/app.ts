@@ -1,13 +1,12 @@
 //our root app component
 import {Component, NgModule, VERSION, CUSTOM_ELEMENTS_SCHEMA, OnInit, OnDestroy, Input} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
-import {default as SvelteGreeter} from 'sveltegreeter'
 
 @Component({
   selector: 'my-app',
   template: `
     <section>
-      <h1>Integrating external components into Angular</h1>
+      <h1>Integrating custom elements and external components into Angular</h1>
       <p>
       Source: <a href="http://github.com/ospatil/ng-components-integration">http://github.com/ospatil/ng-components-integration</a>
       </p>
